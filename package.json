@@ -1,0 +1,21 @@
+{
+  "name": "aws-telegram-starter",
+  "version": "1.0.0",
+  "description": "telegram starter",
+  "main": "src/bot.js",
+  "scripts": {
+    "lint": "eslint",
+    "deploy": "claudia update --profile pokepoll",
+    "create": "claudia create --region eu-central-1 --timeout 20 --api-module src/bot --profile pokepoll --configure-telegram-bot"
+  },
+  "author": "Pavlo Huk",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-bot-builder": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
